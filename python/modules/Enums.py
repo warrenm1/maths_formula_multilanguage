@@ -52,13 +52,51 @@ class EnumExtension(Enum):
 class MathOptions(EnumExtension):
     '''
         Options for maths the argument
-
-        Enum.name => value
-        Enum.value => type
     '''
     ALGEBRA = 'Algebra'
+    '''
+        A branch of mathematics in which symbols, usually letters of the alphabet, represent numbers or members of a specified set and are used to represent quantities and to express general relationships that hold for all members of the set.
+        (definition taken from https://www.wordnik.com/words/algebra)
+    '''
     CALCULUS = 'Calculus'
+    '''
+        The branch of mathematics that deals with limits and the differentiation and integration of functions of one or more variables.
+        (definition taken from https://www.wordnik.com/words/calculus)
+    '''
     GEOMETRY = 'Geometry'
+    '''
+        The mathematics of the properties, measurement, and relationships of points, lines, angles, surfaces, and solids.
+        (definition taken from https://www.wordnik.com/words/geometry)
+    '''
     LINEAR_ALGEBRA = 'Linear Algebra'
+    '''
+        The branch of mathematics that deals with the theory of systems of linear equations, matrices, vector spaces, determinants, and linear transformations.
+        (definition taken from https://www.wordnik.com/words/linear%20algebra)
+    '''
     NUMERICAL_SOLUTIONS = 'Numerical Solutions'
+    '''
+        The study of approximation techniques for solving mathematical problems, taking into account the extent of possible errors.
+        (definition taken from https://www.wordnik.com/words/numerical%20analysis)
+    '''
     STATISTICS = 'Statistics'
+    '''
+        The mathematics of the collection, organization, and interpretation of numerical data, especially the analysis of population characteristics by inference from sampling.
+        (definition taken from https://www.wordnik.com/words/statistics)
+    '''
+
+class LinearEquationForm(EnumExtension):
+    '''
+        Different Forms of Linear Equations for expressing how to display solutions
+    '''
+    POINT_SLOPE_FORM = 'Point Slope Form'
+    '''
+        y - y1 = m(x - x1)
+    '''
+    SLOPE_INTERCEPT_FORM = 'Slope Intercept Form'
+    '''
+        Ax + By = C
+    '''
+    STANDARD_FORM = 'Standard Form'
+    '''
+        y = mx + b
+    '''
